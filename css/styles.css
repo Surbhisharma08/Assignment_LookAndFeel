@@ -259,7 +259,7 @@ main_Container{
 .main_img_Container {
     text-align: center;
     height: 100%;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,0.6) 100%),url("../img/HomeImage.jpg");
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,0.6) 100%),url("HomeImage.jpg");
     height: 80%;
     width: 100%;
     padding: 5rem 0;
@@ -365,13 +365,13 @@ main_Container{
     height: 525px;
     width: 400px;
     border-radius: 4px;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,0.6) 100%),url("../img/Food.jpg");
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,0.6) 100%),url("Food.jpg");
     background-size: cover;
     position: relative;
     color: #fff;
 }
     .services_card:nth-child(2) {
-        background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,0.6) 100%),url("../img/component.jpg");
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,0.6) 100%),url("component.jpg");
         background-size: cover;
         position: relative;
         color: #fff;
