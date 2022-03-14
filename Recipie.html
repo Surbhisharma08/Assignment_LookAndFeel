@@ -1,4 +1,4 @@
-<html xmlns="http://www.w3.org/1999/xhtml">
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, intial-scale=1.0" />
@@ -12,7 +12,7 @@
 <body>
     <nav class="navbar">
         <div class="navbar_Container">
-            <a href="/" id="navbar_logo"><i class="fa-solid fa-burger"></i> Know Your Food</a>
+            <a href="index.html" id="navbar_logo"><i class="fa-solid fa-burger"></i> Know Your Food</a>
             <div class="navbar_toggle" id="mobile_menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -30,13 +30,13 @@
                     </a>
                 </li>
                 <li class="navbar_item">
-                    <a href="Recipie.html" class="navbar_links">
-                     Recipies
+                    <a href="recipie.html" class="navbar_links">
+                        Recipies
                     </a>
                 </li>
                 <li class="navbar_item">
                     <a href="Component.html" class="navbar_links">
-                      Components
+                        Components
                     </a>
                 </li>
                 <li class="navbar_item">
@@ -47,40 +47,33 @@
             </ul>
         </div>
     </nav>
-
-
     <div class="main">
-        <div class="main_container">
+        <h1 style="color: #ff8177;text-align:center;">Find Calories Based On Recipies</h1>
+        <h3 style="color: white; text-align: center; padding: 2rem;">Get Calories based on ingredients of your recipie to empower you to create a better diet. Type in ingredients to see the Food and calorie. Note- search for (apple sugar flour butter) (flour butter cheese tomato) for result and any other items for no result.</h3>
+        <div class="box ">
 
-            <div class="main_img_Container">
-                <!--<img src="img/HomeImage.jpg" alt="no image" id="main_img" />-->
-                <div class="main_Content">
-                    <h1>Know Your Food</h1>
-                    <h2>Based on food items</h2>
-                    <p>See what makes us diffrent</p>
-                    <button onclick="window.location='food.html';"  class="main_btn">Get Started</button>
-                </div>
+            <div class="search-box">
+
+                <input id="recipieInput" type="text" placeholder="type ingredients" />
+                <label for="" class="icon">
+                    <button id="recipeBtn" class="fa-solid fa-search"></button>
+                </label>
             </div>
-            
+
         </div>
+        <table id="recipiettb" style="width:80%;margin:auto;">
+            <thead>
+                <tr id="record">
+                    <th>Food</th>
+                    <th>Calories</th>
+                </tr>
+
+            </thead>
+            <tbody style="color:white" id="RecipieData">
+            </tbody>
+        </table>
+        <h3 id="norecord" style="color: white; text-align: center;display:none; padding: 2rem;">No Record Found</h3>
     </div>
-    <div class="services">
-        <h1>Want to know more about your food</h1>
-        <div class="services_Container">
-        <div class="services_card">
-        <h2>Calorie Count</h2>
-        <p>Based on Ingredients</p>
-        <button onclick="window.location='Recipie.html';" class="main_btn">Get Started</button>
-        </div>
-    
-        <div class="services_card">
-    <h2>How Healthy Your Food Is?</h2>
-    <p>Based on components</p>
-    <button onclick="window.location='Component.html';" class="main_btn">Get Started</button>
-</div>
-    </div>
-    </div>
-    
 
     <!--footer section-->
     <div class="footer_Container">
@@ -89,7 +82,7 @@
                 <div class="footer_link_items">
                     <h2>About Us</h2>
                     <a href="">How It Works</a>
-                    <a href="AboutUs.html">Testimonials</a>
+                    <a href="">Testimonials</a>
                     <a href="">Carrers</a>
                     <a href="">Terms of Service</a>
                 </div>
@@ -120,10 +113,10 @@
                 </div>
             </div>
         </div>
-      
+
         <div class="social_media">
             <div class="social_media_wrap">
-                <div  class="footer_logo">
+                <div class="footer_logo">
                     <a href="" id="footer_logo"><i class="fa-solid fa-burger"></i>Know Your Food</a>
 
                 </div>
@@ -149,6 +142,6 @@
         </div>
     </div>
 
-    <script src="js/main.js"></script>
+    <script src="js/Recipie.js"></script>
 </body>
 </html>

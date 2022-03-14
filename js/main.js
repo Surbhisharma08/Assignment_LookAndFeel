@@ -18,3 +18,4 @@ menu.addEventListener('click', function () {
     menu.classList.toggle('is_active');
     menuLinks.classList.toggle('active');
 })
+
